@@ -8,7 +8,7 @@ import com.example.rest.webservices.restfulwebservices.helloworld.HelloWorldBean
 
 @RestController
 public class HelloWorldController {
-
+	
 	@GetMapping("/hello-world")
 	public String helloWorld() {
 		return "Hello World";
@@ -23,4 +23,5 @@ public class HelloWorldController {
 	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
 		return new HelloWorldBean("Hello World " + name);
 	}
+	
 }
